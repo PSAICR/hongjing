@@ -1,0 +1,519 @@
+/* 通用样式 */
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+ul,
+li,
+a,
+p,
+span,
+img {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1em;
+}
+
+body {
+    font-family: "微软雅黑", sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.g-wrap::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.g-bg {
+    width: 100%;
+    height: 75rem;
+    min-width: 320px;
+    max-width: 750px;
+    margin: 2.32rem auto 0;
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: 100% auto;
+}
+
+.g-wrap {
+    width: 13.4rem;
+    margin: 0 auto;
+}
+
+.g-comments {
+    font-size: .4rem;
+    color: #b0a7a7;
+}
+
+.g-number {
+    float: right;
+    font-size: .48rem;
+    color: #c95454;
+}
+
+.g-title {
+    width: 7.5rem;
+    height: 1.6rem;
+    margin: 0 auto .6rem;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../img/title_myteam.png) no-repeat;
+    background-size: 100% auto;
+}
+
+
+/* 顶部状态条 */
+
+.status-bar {
+    width: 100%;
+    min-width: 320px;
+    max-width: 750px;
+    height: 2.32rem;
+    background: #000 url(../img/top_bg.png) repeat-x;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+
+/* banner图模块 */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 9.8rem;
+}
+
+
+/* logo */
+
+.logo {
+    position: absolute;
+    top: .6rem;
+    left: 0;
+    width: .86rem;
+    height: .78rem;
+    background: url(../img/icon_logo.png) no-repeat;
+    background-size: 100% auto;
+}
+
+
+/* 用户信息 */
+
+.user {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    width: 12.6rem;
+    height: 2.8rem;
+    padding: .32rem .34rem .34rem .56rem;
+    background: url(../img/user.png);
+    background-size: contain;
+    text-align: center;
+}
+
+.avatar {
+    float: left;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.user-info {
+    float: left;
+    font-size: .28rem;
+    color: #afa8a8;
+    padding: .08rem 0 .04rem;
+    margin-left: .44rem;
+    text-align: left;
+}
+
+.user-info h2 {
+    font-size: .56rem;
+    color: #fff;
+    padding-bottom: .34rem;
+}
+
+.user-info p {
+    margin-bottom: .08rem;
+}
+
+.user a {
+    float: right;
+}
+
+.user a img {
+    height: 2.2rem;
+}
+
+
+/* 我的团队模块 */
+
+.team {
+    position: relative;
+    height: 8.8rem;
+    padding-top: 1.6rem;
+    font-size: .4rem;
+    color: #b0a7a7;
+}
+
+.team .package {
+    position: absolute;
+    top: .28rem;
+    right: -0.32rem;
+    width: 2.88rem;
+    height: 2.64rem;
+}
+
+.team-list {
+    display: flex;
+    margin-top: .56rem;
+}
+
+.team-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.team-list li span {
+    display: block;
+    margin: .24rem 0;
+}
+
+.team-border {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #544748;
+    border-radius: 50%;
+}
+
+.team-border a {
+    display: block;
+    width: 1.96rem;
+    height: 1.96rem;
+    border: 1px solid #272029;
+    border-radius: 50%;
+    background: #2c262e url(../img/icon_invite.png) no-repeat center center;
+    background-size: 1.08rem .88rem;
+}
+
+.team-list .user-name {
+    color: #fff;
+}
+
+
+/* 助力领礼包模块 */
+
+.gift {
+    height: 17.2rem;
+    padding-top: 1.6rem;
+    font-size: .48rem;
+    color: #fff;
+}
+
+.gift-title {
+    background: url(../img/title_friends.png) no-repeat;
+    background-size: 100% auto;
+}
+
+.progress-box {
+    position: relative;
+    height: 3.9rem;
+    margin-top: .76rem;
+    margin-bottom: 1rem;
+}
+
+.progress {
+    position: relative;
+    left: -0.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14.2rem;
+    height: .28rem;
+    padding: 0 .56rem 0;
+    background: url(../img/progress.png) no-repeat;
+    background-size: 100% .28rem;
+}
+
+.progress-done {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10%;
+    height: .12rem;
+    background-color: #d5b44f;
+    border: 1px solid #f4d884;
+    border-radius: .06rem;
+}
+
+.gift-list {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 11.1rem;
+    margin: 0 auto;
+}
+
+.gift-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #afa8a8;
+}
+
+.gift-item {
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: .32rem 0;
+    background: url(../img/sprite.png) no-repeat 0 -4.8rem;
+    background-size: 100% auto;
+    overflow: hidden;
+}
+
+.finish-gift {
+    background-position: 0 0;
+}
+
+.active-gift {
+    background-position: 0 -2.4rem;
+}
+
+.finish-text {
+    color: #f8cd80;
+}
+
+
+/* 今日可选任务 */
+
+.gift h3 {
+    height: .48rem;
+    margin-bottom: .26rem;
+    font-size: .48rem;
+    text-align: center;
+    background: url(../img/split-bg.png) no-repeat center center;
+    background-size: 100% auto;
+}
+
+.task-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    height: 6.6rem;
+}
+
+.task-box li {
+    display: flex;
+    width: 6rem;
+    height: 2.4rem;
+    padding: .36rem 0 .44rem .42rem;
+    background: url(../img/task-box.png) no-repeat;
+    background-size: 100% auto;
+}
+
+.task-box li img {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: .26rem;
+}
+
+.task-info .task-count {
+    font-size: .4rem;
+    color: #afa8a8;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}
+
+.task-info .task-number {
+    font-size: .4rem;
+    color: #f8cd80;
+}
+
+
+/* 每日助力榜模块 */
+
+.rankings {
+    height: 17.2rem;
+    padding-top: 1.6rem;
+    font-size: .48rem;
+    color: #afa8a8;
+}
+
+.tankings-title {
+    background: url(../img/title-rankings.png) no-repeat;
+    background-size: 100% auto;
+}
+
+.rankings-list {
+    padding: 0 .4rem;
+    margin-top: .6rem;
+    margin-bottom: .98rem;
+}
+
+.rankings-list li {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    height: 1.96rem;
+    padding: .24rem .42rem;
+    border-bottom: 1px dashed #3e3a3f;
+}
+
+.rankings-list li a {
+    display: block;
+    float: left;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: #fff;
+    border: .04rem solid #5c4e4e;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.rankings-list li .avatar-name {
+    float: left;
+    width: 2.8rem;
+    color: #fff;
+    padding-left: .32rem;
+    margin-right: 1.8rem;
+}
+
+.rankings-list li .task-done {
+    display: block;
+    float: left;
+    width: 3.96rem;
+    text-align: center;
+}
+
+.task-done .task-done-number {
+    font-size: .48rem;
+    color: #c95454;
+    padding-left: .16rem;
+    padding-right: .16rem;
+}
+
+.rankings-list li .rankings-number {
+    display: block;
+    float: right;
+    height: .48rem;
+    color: #c95454;
+}
+
+.rankings .btn-list {
+    padding: 0 .4rem;
+}
+
+.rankings .btn-list button {
+    width: 2.6rem;
+    height: .88rem;
+    padding: 0;
+    font-size: .4rem;
+    color: #fff;
+    border-width: 0;
+}
+
+.rankings .btn-list .return {
+    float: left;
+    background: url(../img/btn-return.png) no-repeat;
+    background-size: 100% auto;
+}
+
+.rankings .btn-list .prev,
+.rankings .btn-list .next {
+    float: right;
+    background: url(../img/btn-return.png) no-repeat;
+    background-size: 100% auto;
+}
+
+.rankings .btn-list .prev {
+    margin-right: .4rem;
+}
+
+
+/* 助力值计算规则模块 */
+
+.rules {
+    height: 19.66rem;
+    padding-top: 1.6rem;
+}
+
+.rules-title {
+    background: url(../img/title-rules.png) no-repeat;
+    background-size: 100% auto;
+}
+
+.rules-content {
+    font-size: .4rem;
+    color: #afa8a8;
+}
+
+.rules-content p {
+    line-height: .84rem;
+}
+
+.rules-content p .yellow {
+    color: #f8cd80;
+}
+
+
+/* 我要组队按钮 */
+
+.join-team {
+    width: 100%;
+    min-width: 320px;
+    max-width: 750px;
+    height: 2rem;
+    border-width: 0;
+    background: #000 url(../img/btn-jointeam.png) repeat-x;
+    background-size: 100% auto;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
